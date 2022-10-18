@@ -3,27 +3,154 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Home | Bantuan Hukum</title>
-      <link rel="stylesheet" href="/script/tailwind.css" />
-      <link rel="stylesheet" href="/style/home.tmp.css">
-      <script src="/script/alpine.js" defer ></script> 
+      <title>GetShayna by BuildWith Angga</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
+      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer ></script> 
     </head>
     <body>
-    <section id="home" class="h-full w-full border-box transition-all duration-500 linear relative" style="
+       <section class="h-full w-full border-box transition-all duration-500 linear relative" style="
 				background-image: linear-gradient(
 					to right,
 					rgba(255, 252, 250, 1),
 					rgba(255, 255, 255, 1)
 				);
 			">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+      .header-3-2 .btn-no-fill,
+      .header-3-2 .text-black-2 {
+        color: #303030;
+        transition: 0.3s;
+      }
+
+      .header-3-2 .btn-no-fill:hover,
+      .header-3-2 .text-black-1 {
+        color: #243142;
+        transition: 0.3s;
+      }
+
+      .header-3-2 .text-gray-1 {
+        color: #aaa6a6;
+      }
+
+      .header-3-2 .btn-outline:hover {
+        border: 1px solid #ff7468;
+        color: #ff7468;
+        transition: 0.3s;
+      }
+
+      .header-3-2 .card {
+        box-shadow: -4px 4px 10px 0px rgba(224, 224, 224, 0.25);
+        transition: 0.4s;
+        top: 0px;
+        left: 0px;
+        position: relative;
+      }
+
+      .header-3-2 .card:hover {
+        box-shadow: -4px 8px 15px 0px rgba(167, 167, 167, 0.25);
+        top: -3px;
+        left: -3px;
+        position: relative;
+        transition: 0.4s;
+      }
+
+      .header-3-2 .navigation .active {
+        position: relative;
+        padding-bottom: 3px;
+        padding-top: 3px;
+        transition: 0.3s;
+      }
+
+      .header-3-2 .navigation .active:before {
+        content: "";
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 0;
+        height: 0px;
+        width: 80%;
+        border-bottom: 2px solid #ff7468;
+      }
+
+      .header-3-2 .btn-fill {
+        border: 1px solid #ff7468;
+        background-color: #ff7468;
+        transition: 0.3s;
+      }
+
+      .header-3-2 .btn-fill:hover {
+        background-color: #ff8378;
+        border: 1px solid #ff8378;
+      }
+
+      .header-3-2 .btn-outline {
+        border: 1px solid #8a807b;
+        color: #8a807b;
+        transition: 0.3s;
+      }
+
+      .header-3-2 .btn-outline:hover div path {
+        fill: #ff7468;
+      }
+
+      .header-3-2 .btn-outline:hover div rect {
+        stroke: #ff7468;
+      }
+
+      .header-3-2 .navigation a:hover {
+        color: #243142 !important;
+        font-weight: 500;
+        transition: 0.2s;
+      }
+
+      .header-3-2 #form {
+        width: 100%;
+      }
+
+      .header-3-2 #form input[type="text"] {
+        width: 100%;
+        background-color: #fff3f2;
+        box-sizing: border-box;
+        font-size: 14px;
+        padding: 0.375rem 0.5rem;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .header-3-2 .search-icon:hover path {
+        fill: #243142;
+      }
+
+      @media (max-width: 1023px) {
+        .header-3-2 #form input[type="text"] {
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .header-3-2 .center-search {
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .header-3-2 #form {
+          width: 320px;
+        }
+      }
+    </style>
     <!-- Navbar -->
     <div class="header-3-2" style="font-family: 'Poppins', sans-serif">
       <header x-data="{ open: false }"
         class="w-full grid grid-cols-1 lg:grid-cols-3 py-8 lg:px-24 md:px-16 sm:px-8 px-8">
         <div class="flex items-center justify-between">
           <a href="#">
-            <img src="/favicon.ico"
+            <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header3/Header-3-5.png"
               alt="" />
           </a>
           <div class="flex justify-end items-center lg:hidden cursor-pointer">
@@ -44,20 +171,54 @@
               src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header3/Header-3-5.png"
               alt="" />
           </a>
-
           <a href="#" class="text-sm text-black-1 font-medium mx-0 lg:mx-5 my-4 lg:my-0 relative active">Home</a>
-          <a href="#benefit" class="text-sm text-black-2 font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Benefit</a>
-          <a href="#service" class="text-sm text-black-2 font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Service</a>
-          <div class="flex items-center justify-end w-full lg:hidden mt-3">
-            <a href="/consult/"><button class="btn-fill text-white font-medium text-sm py-3 px-6 rounded-full focus:outline-none">
-                Consult
-            </button></a>
+          <a href="#" class="text-sm text-black-2 font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Feature</a>
+          <a href="#" class="text-sm text-black-2 font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Pricing</a>
+          <a href="#" class="text-sm text-black-2 font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Blog</a>
+          <div class="mx-0 lg:mx-5 my-4 lg:my-0" x-data="{ search: false }">
+            <svg @click="search = !search" class="hidden cursor-pointer search-icon"
+              :class="{'flex': !search, 'hidden': search}" width="15" height="15" viewBox="0 0 15 15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.85 1.69346C3.5304 1.69346 1.65 3.57386 1.65 5.89346C1.65 8.21305 3.5304 10.0935 5.85 10.0935C8.1696 10.0935 10.05 8.21305 10.05 5.89346C10.05 3.57386 8.1696 1.69346 5.85 1.69346ZM0.25 5.89346C0.25 2.80066 2.75721 0.293457 5.85 0.293457C8.94279 0.293457 11.45 2.80066 11.45 5.89346C11.45 8.98625 8.94279 11.4935 5.85 11.4935C2.75721 11.4935 0.25 8.98625 0.25 5.89346Z"
+                fill="#303030" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.85503 8.89848C9.12839 8.62512 9.57161 8.62512 9.84497 8.89848L14.045 13.0985C14.3183 13.3718 14.3183 13.8151 14.045 14.0884C13.7716 14.3618 13.3284 14.3618 13.055 14.0884L8.85503 9.88843C8.58166 9.61506 8.58166 9.17185 8.85503 8.89848Z"
+                fill="#303030" />
+            </svg>
+            <form method="" name="search" id="form"
+              :class="{'flex lg:absolute center-search': search, 'hidden': !search}"
+              class="hidden items-center rounded-full focus:outline-none px-3" style="background-color: #fff3f2">
+              <input name="search" type="text" class="rounded-full focus:outline-none" placeholder="Search" />
+              <button type="button">
+                <svg @click="search = !search" style="width: 20px; height: 20px"
+                  class="focus:outline-none cursor-pointer" fill="none" stroke="#243142" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </form>
           </div>
+          <div class="flex items-center justify-end w-full lg:hidden mt-3">
+            <button class="btn-no-fill text-sm font-medium py-3 px-8 focus:outline-none">
+              Sign In
+            </button>
+            <button class="btn-fill text-sm text-white font-medium py-3 px-8 rounded-full focus:outline-none">
+              Register
+            </button>
+          </div>
+          <svg @click="open = !open" class="w-6 h-6 absolute top-4 right-4 cursor-pointer lg:hidden" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
         </nav>
         <div class="hidden items-center justify-end lg:flex">
-          <a href="/consult/"><button class="btn-fill text-white font-medium text-sm py-3 px-6 rounded-full focus:outline-none">
-            Consult
-          </button></a>
+          <button class="btn-no-fill text-sm font-medium py-3 px-8 focus:outline-none">
+            Sign In
+          </button>
+          <button class="btn-fill text-white font-medium text-sm py-3 px-6 rounded-full focus:outline-none">
+            Register
+          </button>
         </div>
       </header>
       <div class="lg:px-24 md:px-16 sm:px-8 px-8">
@@ -72,22 +233,20 @@
             class="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-3 md:mb-12 lg:mb-0 items-center text-center">
             <h1 class="title-font text-black-1 sm:text-5xl lg:text-6xl text-4xl mb-5 font-semibold"
               style="line-height: 1.25;">
-              The Best Way<br class="lg:block hidden" />
-              <span style="color: #ff7468"> To Get Justice</span> From <br class="lg:block hidden" />
-              Our Best Lawyer
+              The New Way<br class="lg:block hidden" />
+              <span style="color: #ff7468"> Learn Skills</span> From <br class="lg:block hidden" />
+              Our Best Mentor
             </h1>
             <p class="text-base text-black-2 font-light leading-6 tracking-wide mb-12 lg:mb-20">
-              Hard to find a good lawyer according to your wishes?<br class="sm:block hidden" /> Don't
+              Hard to find a good mentor according to your wishes?<br class="sm:block hidden" /> Don't
               worry because we are here to help you
             </p>
-
             <div
               class="md:flex contents items-center mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 space-x-0">
-              <a href="/consult/"><button
+              <button
                 class="btn-fill inline-flex font-semibold text-white text-base py-4 px-8 rounded-full mb-4 lg:mb-0 md:mb-0 focus:outline-none">
                 Get Started
-              </button></a>
-              
+              </button>
               <button
                 class="btn-outline font-normal text-base py-4 px-6 rounded-full focus:outline-none bg-transparent">
                 <div class="flex items-center">
@@ -118,19 +277,19 @@
                         alt="" />
                     </div>
                     <div class="text-left">
-                      <p class="font-semibold text-base mb-1">Harryawan Kamil</p>
+                      <p class="font-semibold text-base mb-1">Felix Potah</p>
                       <p class="font-light text-xs text-gray-1">
-                        Senior Lawyer
+                        Pro Mentor
                       </p>
                     </div>
                   </div>
                   <div class="grid grid-cols-2 text-left">
                     <div>
                       <p class="font-medium text-base mb-0.5" style="color: #ff7468">
-                        300
+                        64,100
                       </p>
                       <p class="font-light text-xs text-gray-1">
-                        Cases
+                        Followers
                       </p>
                     </div>
                     <div>
@@ -142,9 +301,9 @@
                       </p>
                     </div>
                   </div>
-                  <a href="https://api.whatsapp.com/"><button class="btn-fill font-semibold text-white text-base py-3 px-16 mb-0.5 rounded-xl">
+                  <button class="btn-fill font-semibold text-white text-base py-3 px-16 mb-0.5 rounded-xl">
                     Hire Me
-                  </button></a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -152,8 +311,10 @@
         </div>
       </div>
     </div>
-  </section><section id="benefit" class="h-full w-full border-box bg-white">
+  </section><section class="h-full w-full border-box bg-white">
 		<style scoped>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 			.content-2-1 .btn-outline {
 				border: 1px solid #979797;
 				color: #979797;
@@ -194,7 +355,7 @@
 					</h1>
 					<h2
 						class="text-base font-light title-font mx-12 lg:w-full md:w-full sm:w-3/6 sm:mx-auto text-medium-black">
-						You can easily manage your cases with professional lawyer
+						You can easily manage your business with a powerful tools
 					</h2>
 				</div>
 
@@ -210,8 +371,11 @@
 							</div>
 							<div class="flex-grow">
 								<h4 class="font-medium text-center text-2xl mb-2.5 text-medium-black">
-									High Reputation
+									Easy to Operate
 								</h4>
+								<p class="leading-relaxed text-base text-center tracking-wide text-gray">
+									This can easily help you to <br /> grow up your business fast
+								</p>
 							</div>
 						</div>
 					</div>
@@ -225,8 +389,11 @@
 							</div>
 							<div class="flex-grow">
 								<h4 class="font-medium text-center text-2xl mb-2.5 text-medium-black">
-									Fast and Responsive
+									Real-Time Analytic
 								</h4>
+								<p class="leading-relaxed text-base text-center tracking-wide text-gray">
+									With real-time analytics, you <br /> can check data in real time
+								</p>
 							</div>
 						</div>
 					</div>
@@ -242,6 +409,9 @@
 								<h4 class="font-medium text-center text-2xl mb-2.5 text-medium-black">
 									Very Full Secured
 								</h4>
+								<p class="leading-relaxed text-base text-center tracking-wide text-gray">
+									With real-time analytics, we <br /> will guarantee your data
+								</p>
 							</div>
 						</div>
 					</div>
@@ -260,31 +430,31 @@
 							<div
 								class="flex-grow my-auto lg:text-left lg:w-3/4 w-full lg:text-left text-center lg:my-auto md:my-auto py-6">
 								<h4 class="text-2xl font-semibold mb-2.5 text-medium-black">
-									Need help for lawsuit or cases
+									Fast Business Management in 30 minutes
 								</h4>
 								<p class="text-base font-light tracking-wide w-full text-gray">
-									Our lawyers are develop to helps you slove <br
-										class="lg:block hidden" /> lawsuit or criminal cases.
+									Our tools for business analysis helps an organization understand <br
+										class="lg:block hidden" /> market or business development.
 								</p>
 							</div>
-							<div class="inline-block items-center my-auto text-center">
-								<a href="https://api.whatsapp.com/"><button
+							<a class="inline-block items-center my-auto text-center">
+								<button
 									class="btn-fill font-bold text-white text-base py-4 lg:w-full md:w-full sm:w-2/3 w-full rounded-xl mb-4 md:mb-5 lg:mb-5 focus:outline-none hover:shadow-lg">
-									Contact Us
-								</button></a><br>
-                                <a href="/consult/"><button
+									Buy Now
+								</button>
+								<button
 									class="btn-outline font-normal font-sans text-black font-sans text-base py-4 lg:w-full md:w-full sm:w-2/3 w-full px-6 rounded-xl focus:outline-none bg-transparent rounded hover:border-transparent">
-									Consult Us
-								</button></a>
-							</div>
+									Demo Version
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section><section id="service" class="h-full w-full px-8 py-20 bg-white">
+	</section><section class="h-full w-full px-8 py-20 bg-white">
         <style scoped>
-            /* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
             .content-3-1 .circle {
                 background-color: #ffbf56;
@@ -318,7 +488,7 @@
             <!-- Right Column -->
             <div class="lg:w-1/2 w-full flex flex-col lg:items-start items-center lg:text-left text-center">
                 <h2 class="md:text-4xl text-3xl font-semibold mb-10 tracking-tight text-medium-black">
-                    Our Services
+                    3 Keys Benefit
                 </h2>
                 <ul>
                     <li class="mb-8">
@@ -326,11 +496,11 @@
                             class="font-medium text-2xl mb-5 flex lg:flex-row flex-col items-center lg:justify-start justify-center text-medium-black">
                             <span
                                 class="circle h-12 w-12 text-xl flex items-center justify-center lg:mr-5 lg:mb-0 mb-5 text-white rounded-full">1</span>
-                                Arbitration and Commercial Dispute
+                            Trusted Mentor
                         </h4>
                         <p class="text-base leading-7 tracking-wide caption">
-                            We provides high-quality legal representation for commercial disputes. <br class="sm:inline-block hidden" />
-                            We provide our legal services with values to ensure a successful outcome for our clients.  
+                            We have provided highly experienced mentors<br class="sm:inline-block hidden" />
+                            for several years.
                         </p>
                     </li>
                     <li class="mb-8">
@@ -338,11 +508,11 @@
                             class="font-medium text-2xl mb-5 flex lg:flex-row flex-col items-center lg:justify-start justify-center text-medium-black">
                             <span
                                 class="circle h-12 w-12 text-xl flex items-center justify-center lg:mr-5 lg:mb-0 mb-5 text-white rounded-full">2</span>
-                            Investment
+                            Access Forever
                         </h4>
                         <p class="text-base leading-7 tracking-wide caption">
-                            With recognition of entrepreneurial spirit, and high standards of service and ethics, <br class="sm:inline-block hidden" />
-                            we have been very successful in providing timely and cost-effective representation of our clients.
+                            Are you busy at work so it's hard to consult? don't<br class="sm:inline-block hidden" />
+                            worry because you can access anytime.
                         </p>
                     </li>
                     <li class="mb-16">
@@ -350,12 +520,11 @@
                             class="font-medium text-2xl mb-5 flex lg:flex-row flex-col items-center lg:justify-start justify-center text-medium-black">
                             <span
                                 class="circle h-12 w-12 text-xl flex items-center justify-center lg:mr-5 lg:mb-0 mb-5 text-white rounded-full">3</span>
-                            Coorporate Matters
+                            Halfpenny
                         </h4>
                         <p class="text-base leading-7 tracking-wide caption">
-                            Running a business especially in Indonesia is very challenging. <br class="sm:inline-block hidden" />
-                            Because it not only needs business skill but also sensitivity to comply <br class="sm:inline-block hidden" />
-                            with law and regulations related to corporations which are changing dynamically.
+                            We provide economical packages for those of you<br class="sm:inline-block hidden" />
+                            who are still in school or workers.
                         </p>
                     </li>
                 </ul>
@@ -368,7 +537,7 @@
     </section><section class="h-full w-full pt-20 pb-12 lg:px-24 md:px-16 sm:px-8 px-4 bg-white transition-all duration-500 linear">
 
     <style>
-      /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
       .footer-2-1 .list-footer li a{
           color: #C7C7C7;
       }
@@ -521,7 +690,7 @@
                 <a href="" class="footer-link">Licenses</a>
               </nav>
               <nav class="flex lg:flex-row flex-col items-center text-base justify-center">
-                <p>Copyright ©  2022 Budi Utomo</p>
+                <p>Copyright ©  2021 Analystic Max</p>
               </nav>
           </div>
       </div>

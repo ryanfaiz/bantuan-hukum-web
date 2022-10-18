@@ -42,6 +42,11 @@ nav div a {
     display: none;
 }
 
+.centre{
+    display: flex;
+    justify-content: center;
+}
+
 article{
     margin: 10px;
     margin-bottom: 50px;
