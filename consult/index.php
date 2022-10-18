@@ -16,7 +16,7 @@
       <header x-data="{ open: false }"
         class="w-full grid grid-cols-1 lg:grid-cols-3 py-8 lg:px-24 md:px-16 sm:px-8 px-8">
         <div class="flex items-center justify-between">
-          <a href="#">
+          <a href="/">
             <img src="/favicon.ico"
               alt="" />
           </a>
