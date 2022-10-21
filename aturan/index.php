@@ -42,8 +42,7 @@
             </svg>
           </div>
         </div>
-        <!-- Backdrop -->
-        <!-- Backdop -->
+
         <div :class="{'hidden': !open}" class="bg-black fixed hidden w-full h-full top-0 left-0 z-30 bg-opacity-60"
           @click="open = !open"></div>
         <nav :class="{'flex': open, 'hidden': !open}"
