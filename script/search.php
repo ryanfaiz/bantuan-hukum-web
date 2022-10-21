@@ -7,7 +7,6 @@
 
     $result = mysqli_query($conn, $query);
 ?>
-
 <?php while ( $row = mysqli_fetch_row($result)) : ?>
     <div class="result">
         <a href="/aturan/index.php?id=<?= $row[0]; ?>"><p><?= $row[1]; ?></p></a>
