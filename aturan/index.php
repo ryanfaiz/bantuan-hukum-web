@@ -23,7 +23,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aturan | Bantuan Hukum</title>
     <link rel="stylesheet" href="/script/tailwind.css" />
-    <link rel="stylesheet" href="/style/home.tmp.css">
     <link rel="stylesheet" href="/style/aturan.css">
 </head>
 <body>
