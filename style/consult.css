@@ -95,6 +95,11 @@ container {
     width: 24px;
 }
 
+.result button {
+    border-color: #000000;
+    border-width: 2px;
+}
+
 br{
     margin: 10px 0px;
 }
