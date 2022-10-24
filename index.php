@@ -88,7 +88,7 @@
                 Get Started
               </button></a>
               
-              <button
+              <a href="https://youtu.be/H3J2vQ95hWM" target="_blank"><button
                 class="btn-outline font-normal text-base py-4 px-6 rounded-full focus:outline-none bg-transparent">
                 <div class="flex items-center">
                   <svg class="mr-2.5" width="26" height="27" viewBox="0 0 26 27" fill="none"
@@ -100,7 +100,7 @@
                   </svg>
                   Watch the video
                 </div>
-              </button>
+              </button></a>
             </div>
           </div>
           <!-- Right Column -->
@@ -284,8 +284,6 @@
 		</div>
 	</section><section id="service" class="h-full w-full px-8 py-20 bg-white">
         <style scoped>
-            /* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
-
             .content-3-1 .circle {
                 background-color: #ffbf56;
             }
@@ -368,7 +366,6 @@
     </section><section class="h-full w-full pt-20 pb-12 lg:px-24 md:px-16 sm:px-8 px-4 bg-white transition-all duration-500 linear">
 
     <style>
-      /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
       .footer-2-1 .list-footer li a{
           color: #C7C7C7;
       }
