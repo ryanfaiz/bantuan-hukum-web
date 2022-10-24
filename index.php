@@ -41,7 +41,7 @@
           class="hidden z-50 fixed left-3 right-3 rounded-md shadow-md flex-col p-8 justify-center navigation items-start lg:shadow-none lg:bg-transparent lg:p-0 lg:items-center lg:flex lg:flex-row lg:relative lg:space-x-7 bg-white">
           <a href="#">
             <img class="m-0 lg:hidden mb-3"
-              src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header3/Header-3-5.png"
+              src="/favicon.ico"
               alt="" />
           </a>
 
@@ -106,7 +106,7 @@
           <!-- Right Column -->
           <div class="w-full lg:w-1/2 text-center lg:justify-start justify-center flex pr-0">
             <img class="absolute bottom-0 lg:block hidden lg:right-24 md:right-16 sm:right-8 right-8"
-              src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header3/Header-3-2.png"
+              src="/img/harry.webp"
               alt="" />
             <div class="flex items-end lg:pl-16 pl-0" style="z-index: 1">
               <div class="container mx-auto flex flex-wrap items-center">
@@ -114,7 +114,7 @@
                   <div class="flex items-center space-x-4">
                     <div>
                       <img
-                        src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header3/Header-3-3.png"
+                        src="/img/harry-small.webp"
                         alt="" />
                     </div>
                     <div class="text-left">
@@ -204,7 +204,7 @@
 						<div class="flex rounded-lg h-full lg:pt-8 lg:pb-8 md:pt-8 md:pb-8 pt-4 pb-12 flex-col">
 							<div class="items-center text-center">
 								<div class="inline-flex items-center justify-center rounded-full mb-6">
-									<img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-2.png"
+									<img src="/img/icon1.webp"
 										alt="" />
 								</div>
 							</div>
@@ -219,7 +219,7 @@
 						<div class="flex rounded-lg h-full lg:pt-8 lg:pb-8 md:pt-8 md:pb-8 pt-12 pb-12 flex-col">
 							<div class="items-center text-center">
 								<div class="inline-flex items-center justify-center rounded-full mb-6">
-									<img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-3.png"
+									<img src="/img/icon2.webp"
 										alt="" />
 								</div>
 							</div>
@@ -234,7 +234,7 @@
 						<div class="flex rounded-lg h-full lg:pt-8 lg:pb-8 md:pt-8 md:pb-8 pt-12 pb-6 flex-col">
 							<div class="items-center text-center">
 								<div class="inline-flex items-center justify-center rounded-full mb-6">
-									<img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-4.png"
+									<img src="/img/icon3.webp"
 										alt="" />
 								</div>
 							</div>
@@ -254,7 +254,7 @@
 						<div
 							class="card-header h-full flex lg:flex-row flex-col p-7 rounded-xl lg:space-x-3.5 md:space-x-3.5 space-x-0">
 							<div class="text-center mx-auto">
-								<img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content2/Content-2-1%20(1).png"
+								<img src="/img/image1.webp"
 									alt="" />
 							</div>
 							<div
@@ -312,7 +312,7 @@
             <!-- Left Column -->
             <div class="w-full lg:w-1/2 text-center justify-center flex lg:mb-0 mb-12">
                 <img id="hero"
-                    src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-1.png"
+                    src="/img/image2.webp"
                     alt="" />
             </div>
             <!-- Right Column -->
@@ -392,7 +392,7 @@
         <div class="grid lg:grid-cols-4 sm:grid-cols-2 lg:gap-0 gap-y-6">
           <div class="">
             <div class="mb-5">
-                <img src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header2/Header-2-2.png" alt="">
+                <img src="/favicon.ico" alt="">
             </div>
             <nav class="list-none list-footer space-y-5">
               <li>
